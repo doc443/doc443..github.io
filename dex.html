@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Estudio - Ingo y Drago</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; }
+    .pregunta { margin-bottom: 30px; }
+    .opciones label { display: block; margin: 5px 0; cursor: pointer; }
+    img { max-width: 250px; display: block; margin: 10px 0; border: 2px solid #ccc; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    .resultado { font-weight: bold; font-size: 18px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Juego de Estudio - Ingo y Drago</h1>
+
+  <form id="quizForm">
+    <!-- Pregunta 1 -->
+    <div class="pregunta">
+      <h2>1. Verdadero o Falso</h2>
+      <img src="part/{4372b1f9-3cf9-42a6-b8ce-b9ff2804a5ed}{152}.png" alt="Ingo despeinado con ramas en el pelo">
+      <p>En las ilustraciones, Ingo aparece despeinado y con ramas enredadas en el pelo después de atravesar el seto.</p>
+      <div class="opciones">
+        <label><input type="radio" name="p1" value="Verdadero"> Verdadero</label>
+        <label><input type="radio" name="p1" value="Falso"> Falso</label>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="pregunta">
+      <h2>2. Verdadero o Falso</h2>
+      <img src="part/{4372b1f9-3cf9-42a6-b8ce-b9ff2804a5ed}{203}.png" alt="Mara viendo a Drago">
+      <p>En las ilustraciones, Mara sonríe cuando ve a Drago por primera vez.</p>
+      <div class="opciones">
+        <label><input type="radio" name="p2" value="Verdadero"> Verdadero</label>
+        <label><input type="radio" name="p2" value="Falso"> Falso</label>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="pregunta">
+      <h2>3. Opción múltiple</h2>
+      <img src="part/{19b9e585-3f57-4317-960c-951a4ee6b3ab}{137}.png" alt="Drago después del baño">
+      <p>¿Cómo se ve Drago después del primer baño?</p>
+      <div class="opciones">
+        <label><input type="radio" name="p3" value="A"> A) Verde y arrugado</label>
+        <label><input type="radio" name="p3" value="B"> B) Verde y azul con tripa rosada</label>
+        <label><input type="radio" name="p3" value="C"> C) Blanco y peludo</label>
+        <label><input type="radio" name="p3" value="D"> D) Amarillo con manchas negras</label>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="pregunta">
+      <h2>4. Respuesta corta</h2>
+      <p>Describe cómo aparece el cochecito de muñecas en las imágenes y qué objetos tenía antes de que Ingo lo usara para el huevo.</p>
+      <textarea name="p4" rows="3" cols="50"></textarea>
+    </div>
+
+    <!-- Pregunta 5 -->
+    <div class="pregunta">
+      <h2>5. Unir personaje con imagen</h2>
+      <p>Relaciona cada personaje con la imagen:</p>
+      <img src="part/{19b9e585-3f57-4317-960c-951a4ee6b3ab}{186}.png" alt="Ingo con el huevo en la camisa">
+      <p>Ingo con el huevo en la camisa</p>
+      <img src="part/{1d57c450-ca49-4939-bccd-d15d182a8cdf}{7}.png" alt="Drago en la palangana con agua">
+      <p>Drago en la palangana con agua</p>
+      <img src="part/{1d57c450-ca49-4939-bccd-d15d182a8cdf}{118}.png" alt="Madre mirando la almohada manchada">
+      <p>Madre mirando la almohada manchada</p>
+    </div>
+
+    <!-- Pregunta 6 -->
+    <div class="pregunta">
+      <h2>6. Opción múltiple</h2>
+      <p>¿Qué dice Mara cuando Ingo lleva el huevo al parque?</p>
+      <div class="opciones">
+        <label><input type="radio" name="p6" value="A"> A) “¡Qué bonito huevo!”</label>
+        <label><input type="radio" name="p6" value="B"> B) “¡El ridículo de Ingo con su ridículo huevo!”</label>
+        <label><input type="radio" name="p6" value="C"> C) “¡Seguro que es un huevo de dinosaurio!”</label>
+        <label><input type="radio" name="p6" value="D"> D) “¡Quiero cuidarlo contigo!”</label>
+      </div>
+    </div>
+
+    <!-- Pregunta 7 -->
+    <div class="pregunta">
+      <h2>7. Respuesta corta</h2>
+      <p>¿Cómo reacciona la madre de Ingo al ver el huevo por primera vez?</p>
+      <textarea name="p7" rows="2" cols="50"></textarea>
+    </div>
+
+    <!-- Pregunta 8 -->
+    <div class="pregunta">
+      <h2>8. Unir personaje con actitud</h2>
+      <p>Relaciona cada personaje con su descripción.</p>
+      <textarea name="p8" rows="6" cols="60"></textarea>
+    </div>
+
+    <!-- Pregunta 9 -->
+    <div class="pregunta">
+      <h2>9. Opción múltiple</h2>
+      <p>¿Qué hace el padre cuando Drago deja una mancha en la alfombra?</p>
+      <div class="opciones">
+        <label><input type="radio" name="p9" value="A"> A) Se ríe y lo limpia.</label>
+        <label><input type="radio" name="p9" value="B"> B) Dice que Drago no puede entrar más al salón.</label>
+        <label><input type="radio" name="p9" value="C"> C) Lo lleva a la terraza para jugar.</label>
+        <label><input type="radio" name="p9" value="D"> D) Lo regala a Miguel y Petra.</label>
+      </div>
+    </div>
+
+    <!-- Pregunta 10 -->
+    <div class="pregunta">
+      <h2>10. Respuesta corta</h2>
+      <p>¿Qué significa el nombre “Drago” según la tía Katia?</p>
+      <textarea name="p10" rows="2" cols="50"></textarea>
+    </div>
+  </form>
+
+  <button type="button" onclick="calcular()">Enviar respuestas</button>
+  <div class="resultado" id="resultado"></div>
+
+  <script>
+    const respuestasCorrectas = {
+      p1: "Verdadero",
+      p2: "Falso",
+      p3: "B",
+      p4: "muñecas",
+      p6: "B",
+      p7: "curioso",
+      p8: "Ingo",
+      p9: "B",
+      p10: "querido"
+    };
+
+    function calcular() {
+      let puntaje = 0;
+      let total = Object.keys(respuestasCorrectas).length;
+
+      for (let key in respuestasCorrectas) {
+        let seleccion = document.querySelector(`[name="${key}"]:checked`) || document.querySelector(`[name="${key}"]`);
+        if (seleccion) {
+          if (seleccion.value && seleccion.value === respuestasCorrectas[key]) {
+            puntaje++;
+          } else if (seleccion.tagName === "TEXTAREA" && seleccion.value.toLowerCase().includes(respuestasCorrectas[key])) {
+            puntaje++;
+          }
+        }
+      }
+
+      let porcentaje = (puntaje / total) * 100;
+      document.getElementById("resultado").innerText =
+        `Has obtenido ${puntaje} de ${total} respuestas correctas (${porcentaje.toFixed(1)}%).`;
+    }
+  </script>
+</body>
+</html>
